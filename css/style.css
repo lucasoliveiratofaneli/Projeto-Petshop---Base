@@ -128,12 +128,13 @@ nav a:hover {
 /* CARDS */
 .cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .card {
+  width: 300px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: var(--radius);
   box-shadow: var(--sombra);
@@ -141,6 +142,7 @@ nav a:hover {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transform: 0.4s;
+  border: 0.5px solid var(--escuro);
 }
 .card:hover {
   transform: translateY(-12px);
@@ -169,7 +171,7 @@ nav a:hover {
 }
 
 .galeria img {
-  height: 190px;
+  height: 235px;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--sombra);
@@ -274,4 +276,31 @@ iframe {
 }
 /* RESPONSIVIDADE - TABLET */
 @media (min-width: 768px) and (max-width: 1200px) {
+}
+
+footer a {
+  color: var(--claro);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: var(--secundaria);
+}
+
+/* PRODUTOS */
+.preco {
+  display: block;
+  padding: 0 20px;
+  margin-bottom: 20px;
+
+  color: var(--secundaria);
+
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card button {
+  margin: 0 20px 20px;
 }
