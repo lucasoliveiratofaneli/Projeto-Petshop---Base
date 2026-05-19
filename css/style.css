@@ -1,11 +1,26 @@
 :root {
-  --primaria: #243342;
-  --secundaria: #1264f2;
-  --escuro: #0f172a;
-  --claro: #ffffff;
-  --texto: #334155;
-  --sombra: 0 8px 30px rgba(0, 0, 0, 0.2);
-  --radius: 20px;
+  /* Modo Claro */
+--primaria: #2563eb;
+--secundaria: #f97316;
+--escuro: #1e3a5f;
+--claro: #f8fbff;
+--texto: #334155;
+--sombra: 0 8px 25px rgba(37, 99, 235, 0.12);
+--radius: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Modo Dark */
+/* Modo Dark */
+--primaria: #1d4ed8;
+--secundaria: #fb923c;
+--escuro: #0f172a;
+--claro: #1e293b;
+--texto: #e2e8f0;
+--sombra: 0 8px 25px rgba(0, 0, 0, 0.4);
+--radius: 20px;
+  }
 }
 
 * {
@@ -220,7 +235,7 @@ button {
 }
 
 button:hover {
-  background: #1264f2;
+  background: #faaf00;
 }
 /* RODAPE */
 footer {
@@ -308,12 +323,13 @@ footer a:hover {
 .sobre-box {
   max-width: 900px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   padding: 40px;
   border-radius: 20px;
   box-shadow: var(--sombra);
   line-height: 1.8;
   font-size: 18px;
+  color: white;
 }
 
 .sobre-box p {
@@ -324,7 +340,7 @@ footer a:hover {
   padding: 100px 20px 60px;
   text-align: center;
   background: linear-gradient(135deg, #189fff, #19c7d1);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .topo-sobre h1 {
